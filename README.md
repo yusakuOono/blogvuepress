@@ -13,7 +13,7 @@ yarn dev
 
 ### Netlifyを使用してホスティングしています。
 本番環境:
-[https://jovial-wright-87420d.netlify.com/](https://jovial-wright-87420d.netlify.com/)
+[https://pedantic-goldberg-e70663.netlify.app/](https://pedantic-goldberg-e70663.netlify.app/)
 
 ### ビルドコマンド
 yarn build:src

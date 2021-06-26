@@ -32,7 +32,7 @@ export default {
           <h3 class="blog-post__title">{{ item.frontmatter.title }}</h3>
         </router-link>
         <time>{{ formatPublishDate }}</time>
-        <span v-for="tag in item.frontmatter.tags" class="blog-list__tags">
+        <span v-for="tag in item.frontmatter.tags" :key="tag.key" class="blog-list__tags">
             <a class="blog-list__btn" @click="addTag(tag)">{{ tag }}, </a>
         </span>
     </section>

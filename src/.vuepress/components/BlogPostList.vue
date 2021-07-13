@@ -101,17 +101,15 @@ export default {
             </button>
         </div>
         <ul class="blog-list">
-            <li v-for="(item, index) in filteredList"
-                class="blog-list__item">
+            <li v-for="(item, index) in filteredList" class="blog-list__item">
                 <BlogPostPreview
-                    v-show="index >= currentPage * pageSize && index < (currentPage + 1) * pageSize"
                     :item="item"
                     :addTag="addTag"
                 />
             </li>
         </ul>
 
-        <div class="pagination">
+        <!-- <div class="pagination">
             <button v-show="currentPage > 0"
                 @click="previousPage"
                 class="button--pagination"
@@ -126,7 +124,7 @@ export default {
             >
                 Next
             </button>
-        </div>
+        </div> -->
     </div>
 </template>
 
